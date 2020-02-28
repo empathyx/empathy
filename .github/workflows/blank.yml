@@ -1,0 +1,24 @@
+name: aya serve
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: Order number: #### 
+      Thank you for ordering at my cafe! I will be serving you today.
+      - What is it you'd like? . . . Lovely! I'll be with you very soon!
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Thank you for ordering:
+        Order:
+        ### - 0.00
+        ## - 0.00
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
